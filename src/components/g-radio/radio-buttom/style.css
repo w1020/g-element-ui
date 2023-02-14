@@ -1,0 +1,74 @@
+.g-radio-button, .g-radio-button__inner {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+.g-radio-button__orig-radio {
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+}
+.g-radio-button__inner {
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  font-weight: 500;
+  border-left: 0;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 0;
+}
+.g-radio-button__inner:hover {
+  color: #409eff;
+}
+.g-radio-button:first-child .g-radio-button__inner{
+  border-left: 1px solid #dcdfe6;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.g-radio-button:last-child .g-radio-button__inner{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* 选中后的样式 */
+.g-radio-button__orig-radio:checked+.g-radio-button__inner {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+}
+/* 禁用后的样式 */
+.g-radio-button__orig-radio:disabled+.g-radio-button__inner {
+  color: #c0c4cc;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: #fff;
+  border-color: #ebeef5;
+  box-shadow: none;
+}
+/* 选中且禁用 */
+.g-radio-button__orig-radio:disabled:checked+.g-radio-button__inner {
+  background-color: #f2f6fc;
+}
+/* 三种尺寸 */
+.g-radio-button--medium .g-radio-button__inner {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.g-radio-button--small .g-radio-button__inner {
+  padding: 9px 15px;
+  font-size: 12px;
+}
+.g-radio-button--mini .g-radio-button__inner {
+  padding: 7px 15px;
+  font-size: 12px;
+}

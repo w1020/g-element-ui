@@ -1,0 +1,22 @@
+.g-carousel__item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 0;
+}
+.g-carousel__item.is-active {
+  z-index: 3;
+}
+.g-carousel__item.is-animating--faster {
+  transition: transform 0.4s ease-in-out;
+}
+.g-carousel__item.is-animating--default {
+  transition: transform 0.6s ease-in-out;
+}
+.g-carousel__item.is-animating--slower {
+  transition: transform 0.8s ease-in-out;
+}

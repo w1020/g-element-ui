@@ -1,0 +1,6 @@
+.cursor_pointer{
+  cursor: pointer;
+}
+.is-disabled{
+  cursor: not-allowed;
+}

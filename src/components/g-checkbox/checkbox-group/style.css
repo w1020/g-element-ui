@@ -1,0 +1,6 @@
+.g-checkbox-group {
+  font-size: 0;
+}
+.g-checkbox-group .g-checkbox:last-child{
+  margin-right: 0px;
+}
