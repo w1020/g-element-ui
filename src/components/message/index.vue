@@ -28,7 +28,7 @@ export default {
   props: {
     message: {
       type: String,
-      default: '这是一条消息提示'
+      default: '这是一条消息提示！'
     },
     type: {
       type: String,
